@@ -9,7 +9,7 @@ import newsRouter from "./routes/news.js";
 // const cors = require('cors');
 import cors from "cors";
 import authfunc from "./middleware/auth.js";
-const PORT = 8080;
+const PORT = process.env.PORT||8080;
 const app = express();
 app.use(express.json());
 app.use(cors());
